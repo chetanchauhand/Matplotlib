@@ -8,10 +8,15 @@ data ={
     "Precipitation" : [9,8,7,6,4,5,2,3,1]
 }
 
-df = pd.DataFrame(data)
+df = pd.DataFrame(data,index=["City1","City2","City3","City4","City5","City6","City7","City8","City9"])
 
 # df.plot()
 
-df["Temp"].plot(kind='hist')
+# df["Temp"].plot(kind='hist')
+
+# df.plot.pie(y="Wind")
+
+df.plot(kind="scatter",x="Wind",y="Humidity")
+
 
 plt.show()
