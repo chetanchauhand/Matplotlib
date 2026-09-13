@@ -16,7 +16,8 @@ df = pd.DataFrame(data,index=["City1","City2","City3","City4","City5","City6","C
 
 # df.plot.pie(y="Wind")
 
-df.plot(kind="scatter",x="Wind",y="Humidity")
+# df.plot(kind="scatter",x="Wind",y="Humidity")  #Scater plot
+df.plot.area()
 
 
 plt.show()
