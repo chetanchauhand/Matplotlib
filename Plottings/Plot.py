@@ -10,6 +10,8 @@ data ={
 
 df = pd.DataFrame(data)
 
-df.plot()
+# df.plot()
+
+df["Temp"].plot(kind='hist')
 
 plt.show()
